@@ -43,7 +43,7 @@ def generate_sketches(spark):
     print(f"Sketches written as Avro to: {output_path}")
 
 if __name__ == "__main__":
-    # Create the SparkSession with the Avro dependency
+    # Adding avro dependency as jar in spark sessioon
     spark = SparkSession.builder \
         .appName("theta-sketch-builder") \
         .master("local[*]") \
